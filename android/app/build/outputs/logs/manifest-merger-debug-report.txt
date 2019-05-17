@@ -1,0 +1,154 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/188ed8c8aee0a2745d21811d48f60b7e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c792024efe1ed29c9ff1d6c1ebed7195/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a9cb06d9bf35d59e90c967ae301e4866/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/3aa39e45fd1ff294236285616d7f8e13/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/45ab69e22800f761040c543922f2c068/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/8a5d8df4adf0f3b75f356b10feed4b06/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/89f18b8359b8cea44a5ee545a4b341f0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c4afdba4ac3a6efd491886556404e435/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/f7fd9347f524a90201abccd7b8544312/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/7c2672a98d4638dd8cde14a4069a4210/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/3ef8de4f42841cedfd0794d9b0c6644f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/b332da11aec03a25e3115b27421213d0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ede58d1d00dfb1ce57d74ca9f7feff4e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/bcb384fc7935fd7ef6d82db8ea5f4cf9/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/0c4aa867dc4bcb4321e613a4fa3930f3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ed1cc2888ac2fa5e8c233dd975cbb678/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a49863c7c94139cd48999fae2c89b169/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/35865c999d15d8ff0170a0225b48f0d2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/59613d3dbd75fdd433d0cf98d9531c08/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/1a500f3abab8bb84fc9d9f623eade309/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/4e9f3322922893a4614637c240c6cf9a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/3c7367eb95a6557778e8168da80450c2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/2db0ca392e5668620dded7db7b7bbaf5/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a943280887e5c32168ab8674d956f7c1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/fcbb723b8c2c7e62251cc9f5d7334c7a/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/45418c3e140fc5484c21df30924dd2a3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/d61666ba74f1c597c4037f7305b67c9d/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c792024efe1ed29c9ff1d6c1ebed7195/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c792024efe1ed29c9ff1d6c1ebed7195/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ed1cc2888ac2fa5e8c233dd975cbb678/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ed1cc2888ac2fa5e8c233dd975cbb678/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a49863c7c94139cd48999fae2c89b169/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a49863c7c94139cd48999fae2c89b169/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ed1cc2888ac2fa5e8c233dd975cbb678/AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.gromyk.sensorsedu.MainActivity
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/188ed8c8aee0a2745d21811d48f60b7e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/188ed8c8aee0a2745d21811d48f60b7e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c792024efe1ed29c9ff1d6c1ebed7195/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c792024efe1ed29c9ff1d6c1ebed7195/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a9cb06d9bf35d59e90c967ae301e4866/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a9cb06d9bf35d59e90c967ae301e4866/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/3aa39e45fd1ff294236285616d7f8e13/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/3aa39e45fd1ff294236285616d7f8e13/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/45ab69e22800f761040c543922f2c068/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/45ab69e22800f761040c543922f2c068/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/8a5d8df4adf0f3b75f356b10feed4b06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/8a5d8df4adf0f3b75f356b10feed4b06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/89f18b8359b8cea44a5ee545a4b341f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/89f18b8359b8cea44a5ee545a4b341f0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c4afdba4ac3a6efd491886556404e435/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c4afdba4ac3a6efd491886556404e435/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/f7fd9347f524a90201abccd7b8544312/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/f7fd9347f524a90201abccd7b8544312/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/7c2672a98d4638dd8cde14a4069a4210/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/7c2672a98d4638dd8cde14a4069a4210/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/3ef8de4f42841cedfd0794d9b0c6644f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/3ef8de4f42841cedfd0794d9b0c6644f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/b332da11aec03a25e3115b27421213d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/b332da11aec03a25e3115b27421213d0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ede58d1d00dfb1ce57d74ca9f7feff4e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ede58d1d00dfb1ce57d74ca9f7feff4e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/bcb384fc7935fd7ef6d82db8ea5f4cf9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/bcb384fc7935fd7ef6d82db8ea5f4cf9/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/0c4aa867dc4bcb4321e613a4fa3930f3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/0c4aa867dc4bcb4321e613a4fa3930f3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ed1cc2888ac2fa5e8c233dd975cbb678/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ed1cc2888ac2fa5e8c233dd975cbb678/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a49863c7c94139cd48999fae2c89b169/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a49863c7c94139cd48999fae2c89b169/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/35865c999d15d8ff0170a0225b48f0d2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/35865c999d15d8ff0170a0225b48f0d2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/59613d3dbd75fdd433d0cf98d9531c08/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/59613d3dbd75fdd433d0cf98d9531c08/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/1a500f3abab8bb84fc9d9f623eade309/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/1a500f3abab8bb84fc9d9f623eade309/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/4e9f3322922893a4614637c240c6cf9a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/4e9f3322922893a4614637c240c6cf9a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/3c7367eb95a6557778e8168da80450c2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/3c7367eb95a6557778e8168da80450c2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/2db0ca392e5668620dded7db7b7bbaf5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/2db0ca392e5668620dded7db7b7bbaf5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a943280887e5c32168ab8674d956f7c1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a943280887e5c32168ab8674d956f7c1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/fcbb723b8c2c7e62251cc9f5d7334c7a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/fcbb723b8c2c7e62251cc9f5d7334c7a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/45418c3e140fc5484c21df30924dd2a3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/45418c3e140fc5484c21df30924dd2a3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/d61666ba74f1c597c4037f7305b67c9d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/d61666ba74f1c597c4037f7305b67c9d/AndroidManifest.xml:20:5-44
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
