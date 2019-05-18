@@ -15,6 +15,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.gromyk.sensorsedu.socket.Socket;
+import com.gromyk.sensorsedu.socket.SocketManager;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
@@ -25,6 +28,8 @@ public class AccelerometerFragment extends Fragment {
     private Sensor sensor;
     private SensorEventListener sensorEventListener;
 
+    private Socket socket;
+
     private TextView xValueTextView;
     private TextView yValueTextView;
     private TextView zValueTextView;
@@ -32,6 +37,7 @@ public class AccelerometerFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        socket = new SocketManager();
         initSensorsComponents();
     }
 
@@ -80,6 +86,7 @@ public class AccelerometerFragment extends Fragment {
             @Override
             public void onSensorChanged(SensorEvent event) {
                 message = "Got a sensor event " + Arrays.toString(event.values) + "\n";
+                socket.sendMessage(event);
                 processSensorChanges(event);
             }
 
