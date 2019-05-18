@@ -21,6 +21,8 @@ import com.gromyk.sensorsedu.socket.SocketManager;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class AccelerometerFragment extends Fragment {
     private int sensorType;
@@ -35,9 +37,9 @@ public class AccelerometerFragment extends Fragment {
     private TextView zValueTextView;
 
     @Override
-    public void onStart() {
-        super.onStart();
-        socket = new SocketManager();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        initSocket();
         initSensorsComponents();
     }
 
@@ -59,14 +61,25 @@ public class AccelerometerFragment extends Fragment {
 
     @Override
     public void onResume() {
-        sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_FASTEST);
         super.onResume();
+        sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
     public void onPause() {
         sensorManager.unregisterListener(sensorEventListener);
         super.onPause();
+    }
+
+    private void initSocket() {
+        socket = new SocketManager();
+        String ipAddress = "192.168.0.104";
+        int port = 81;
+        try {
+            socket.connect(ipAddress, port);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void initView() {
@@ -81,12 +94,10 @@ public class AccelerometerFragment extends Fragment {
         sensorManager = (SensorManager) getActivity().getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(sensorType);
         sensorEventListener = new SensorEventListener() {
-            private String message;
-
             @Override
             public void onSensorChanged(SensorEvent event) {
-                message = "Got a sensor event " + Arrays.toString(event.values) + "\n";
-                socket.sendMessage(event);
+                SensorEventDTO eventDTO = new SensorEventDTO(event.values);
+                socket.sendMessage(eventDTO.toHashMap());
                 processSensorChanges(event);
             }
 

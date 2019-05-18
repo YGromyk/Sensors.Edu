@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-28:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/188ed8c8aee0a2745d21811d48f60b7e/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c792024efe1ed29c9ff1d6c1ebed7195/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/a9cb06d9bf35d59e90c967ae301e4866/AndroidManifest.xml:17:1-22:12
@@ -31,25 +31,33 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/yuriigromyk/.gr
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/fcbb723b8c2c7e62251cc9f5d7334c7a/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/45418c3e140fc5484c21df30924dd2a3/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/d61666ba74f1c597c4037f7305b67c9d/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:1-28:12
 		INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:5:5-19:19
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:8:5-26:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c792024efe1ed29c9ff1d6c1ebed7195/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/c792024efe1ed29c9ff1d6c1ebed7195/AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ed1cc2888ac2fa5e8c233dd975cbb678/AndroidManifest.xml:22:5-89
@@ -59,31 +67,39 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/yuri
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] /Users/yuriigromyk/.gradle/caches/transforms-2/files-2.1/ed1cc2888ac2fa5e8c233dd975cbb678/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:15:9-40
+	android:name
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:9:9-28
+uses-library#org.apache.http.legacy
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:16:9-18:39
+	android:required
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:18:13-36
+	android:name
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:17:13-50
 activity#com.gromyk.sensorsedu.MainActivity
-ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:12:9-18:20
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:12:19-47
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:19:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml:23:27-74
 uses-sdk
 INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/yuriigromyk/AndroidStudioProjects/SensorsEdu/android/app/src/main/AndroidManifest.xml

@@ -1,16 +1,41 @@
 package com.gromyk.sensorsedu.socket;
 
+import android.util.Log;
+
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.function.Function;
 
 public class SocketManager implements Socket {
+    private static final int DEFAULT_THREAD_POOL_SIZE = 1;
+    private ExecutorService executorService;
+
+    private java.net.Socket clientSocket;
+    private ObjectOutputStream out;
 
     public SocketManager() {
-
+        executorService = Executors.newFixedThreadPool(DEFAULT_THREAD_POOL_SIZE);
     }
 
     @Override
-    public void connect() {
-
+    public void connect(final String ip, final int port) throws Exception {
+        executorService.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    clientSocket = new java.net.Socket(ip, port);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    out = new ObjectOutputStream(clientSocket.getOutputStream());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     @Override
@@ -34,7 +59,20 @@ public class SocketManager implements Socket {
     }
 
     @Override
-    public void sendMessage(Object message) {
-
+    public void sendMessage(final Object message) {
+        if (message == null) return;
+        executorService.execute(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(SocketManager.class.getSimpleName(), clientSocket.toString());
+                Log.d(SocketManager.class.getSimpleName(), "is connected = " + clientSocket.isConnected());
+                Log.d(SocketManager.class.getSimpleName(), "received event");
+                try {
+                    out.writeObject(message);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 }
