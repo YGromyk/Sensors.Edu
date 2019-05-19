@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sensors.Edu</string>
+    <string name="x">x:</string>
+    <string name="y">y:</string>
+    <string name="z">z:</string>
+    <string name="sensor_values">Sensor values:</string>
 </resources>
