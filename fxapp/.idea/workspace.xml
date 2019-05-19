@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/AccelerometerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/AccelerometerFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/socket/Socket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/socket/Socket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/socket/SocketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/socket/SocketManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/fxapp/fxapp/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fxapp/fxapp/ClientThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/fxapp/fxapp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fxapp/fxapp/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/fxapp/fxapp/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxapp/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxapp/ClientThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fxapp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxapp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxapp/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/ant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/src/sample/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/src/sample/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/src/sample/sample.fxml" beforeDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,15 +92,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fxapp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="120">
+              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1711#1712#0" expanded="true" />
                 <element signature="e#1804#1805#0" expanded="true" />
-                <element signature="e#2840#2841#0" expanded="true" />
+                <element signature="e#2782#2783#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,7 +124,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/beans/property/BooleanProperty.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -379,13 +380,13 @@
       <window_info id="Image Layers" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.23928571" />
-      <window_info id="Structure" order="1" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23928571" />
+      <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29105324" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29105324" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997735" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -569,22 +570,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fxapp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#1711#1712#0" expanded="true" />
+            <element signature="e#1804#1805#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/beans/property/BooleanProperty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fxapp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1804#1805#0" expanded="true" />
-            <element signature="e#2840#2841#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
