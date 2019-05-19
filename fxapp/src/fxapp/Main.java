@@ -4,6 +4,8 @@ import fxapp.socket.ClientThread;
 import fxapp.utils.ColorsHelper;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.geometry.NodeOrientation;
 import javafx.scene.Node;
 import javafx.scene.Scene;
@@ -11,6 +13,7 @@ import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
@@ -22,8 +25,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Main extends Application {
-    private int width = 600;
-    private int height = 600;
+    private int width = 1280;
+    private int height = 720;
     private int margin = 10;
 
     private LineChart linechart;
@@ -32,23 +35,28 @@ public class Main extends Application {
     private XYChart.Series xDataSeries;
     private XYChart.Series yDataSeries;
     private XYChart.Series zDataSeries;
+    private ScrollPane root;
 
     @Override
     public void start(Stage stage) {
-        ScrollPane root = new ScrollPane(initChart());
-        root.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
-        //initColors();
+        root = new ScrollPane();
+        root.setContent(initChart());
         Scene scene = new Scene(root, width, height);
         stage.setTitle("SensorsApp");
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+
         new Thread(this::connectSocket).start();
     }
 
 
     private LineChart initChart() {
-        xAxis = new NumberAxis(System.currentTimeMillis() - (5 * 1000), System.currentTimeMillis() + (2 * 1000), 1000);
+        xAxis = new NumberAxis(
+                System.currentTimeMillis() - (5 * 1000),
+                System.currentTimeMillis() + (2 * 1000),
+                1000
+        );
         yAxis = new NumberAxis();
         xAxis.setLabel("Time");
         yAxis.setLabel("Value");
@@ -69,7 +77,8 @@ public class Main extends Application {
         linechart = new LineChart(xAxis, yAxis);
         linechart.setAnimated(false);
         linechart.setCreateSymbols(false);
-        linechart.setPrefSize(width - margin, height - margin);
+        linechart.setPrefSize(width - margin, height - margin
+        );
 
 
         //Prepare XYChart.Series objects by setting data
