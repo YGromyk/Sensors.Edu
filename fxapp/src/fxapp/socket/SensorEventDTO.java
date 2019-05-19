@@ -1,4 +1,4 @@
-package fxapp;
+package fxapp.socket;
 
 
 import java.io.Serializable;

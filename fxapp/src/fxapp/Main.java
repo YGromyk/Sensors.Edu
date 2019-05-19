@@ -1,13 +1,17 @@
 package fxapp;
 
+import fxapp.socket.ClientThread;
+import fxapp.utils.ColorsHelper;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.geometry.NodeOrientation;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
 
@@ -33,6 +37,7 @@ public class Main extends Application {
     public void start(Stage stage) {
         ScrollPane root = new ScrollPane(initChart());
         root.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
+        //initColors();
         Scene scene = new Scene(root, width, height);
         stage.setTitle("SensorsApp");
         stage.setScene(scene);
@@ -59,6 +64,7 @@ public class Main extends Application {
             }
         });
 
+
         //Creating the line chart
         linechart = new LineChart(xAxis, yAxis);
         linechart.setAnimated(false);
@@ -84,6 +90,31 @@ public class Main extends Application {
         //Creating a scene object
     }
 
+
+    private void initColors() {
+        Node xLine = xDataSeries.getNode().lookup(".chart-series-line");
+        Node yLine = yDataSeries.getNode().lookup(".chart-series-line");
+        Node zLine = zDataSeries.getNode().lookup(".chart-series-line");
+
+        Node xText = xDataSeries.getNode().lookup("-chart-legend-item-symbol");
+        Node yText = yDataSeries.getNode().lookup("-chart-legend-item-symbol");
+        Node zText = zDataSeries.getNode().lookup("-chart-legend-item-symbol");
+
+
+        String redRGB = ColorsHelper.getRGBFromColor(Color.RED);
+        String greenRGB = ColorsHelper.getRGBFromColor(Color.GREEN);
+        String blueRGB = ColorsHelper.getRGBFromColor(Color.BLUE);
+
+        xLine.setStyle("-fx-stroke: rgba(" + redRGB + ", 1.0);");
+        yLine.setStyle("-fx-stroke: rgba(" + greenRGB + ", 1.0);  -fx-text-fill: rgba(" + greenRGB + ", 1.0);");
+        zLine.setStyle("-fx-stroke: rgba(" + blueRGB + ", 1.0);  -fx-text-fill: rgba(" + blueRGB + ", 1.0);");
+
+        xText.setStyle("-fx-text-fill: rgba(" + redRGB + ", 1.0);");
+        yText.setStyle("-fx-text-fill: rgba(" + greenRGB + ", 1.0);");
+        zText.setStyle("-fx-text-fill: rgba(" + blueRGB + ", 1.0);");
+
+    }
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -104,8 +135,6 @@ public class Main extends Application {
             try {
                 assert serverSocket != null;
                 socket = serverSocket.accept();
-            } catch (IOException e) {
-                System.out.println("I/O error: " + e);
             } catch (Exception e) {
                 e.printStackTrace();
             }

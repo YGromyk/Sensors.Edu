@@ -1,5 +1,6 @@
-package fxapp;
+package fxapp.socket;
 
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
@@ -25,8 +26,8 @@ public class ClientThread extends Thread {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(socket);
         Object line;
+        System.out.println("Client: " + socket.getRemoteSocketAddress() + " connected.");
         while (true) {
             try {
                 line = objectInputStream.readObject();
@@ -36,10 +37,10 @@ public class ClientThread extends Thread {
                         onEventListener.onEventReceived(event);
                     }
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
+            } catch (EOFException exception) {
+                System.out.println("Client " + socket.getRemoteSocketAddress() + " disconnected.");
                 return;
-            } catch (ClassNotFoundException e) {
+            } catch (ClassNotFoundException | IOException e) {
                 e.printStackTrace();
             }
         }
@@ -53,7 +54,7 @@ public class ClientThread extends Thread {
         this.onEventListener = onEventListener;
     }
 
-    public interface OnEventListener{
+    public interface OnEventListener {
         void onEventReceived(SensorEventDTO eventDTO);
     }
 }
