@@ -12,20 +12,25 @@ public class SocketManager implements Socket {
     private static final int DEFAULT_THREAD_POOL_SIZE = 1;
     private ExecutorService executorService;
 
+    private String ipAddress ;
+    private int port ;
+
     private java.net.Socket clientSocket;
     private ObjectOutputStream out;
 
-    public SocketManager() {
+    public SocketManager(final String ip, final int port) {
+        this.ipAddress = ip;
+        this.port = port;
         executorService = Executors.newFixedThreadPool(DEFAULT_THREAD_POOL_SIZE);
     }
 
     @Override
-    public void connect(final String ip, final int port) throws Exception {
+    public void connect() {
         executorService.execute(new Runnable() {
             @Override
             public void run() {
                 try {
-                    clientSocket = new java.net.Socket(ip, port);
+                    clientSocket = new java.net.Socket(ipAddress, port);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -64,6 +69,8 @@ public class SocketManager implements Socket {
         executorService.execute(new Runnable() {
             @Override
             public void run() {
+                if (!clientSocket.isConnected())
+                    connect();
                 Log.d(SocketManager.class.getSimpleName(), clientSocket.toString());
                 Log.d(SocketManager.class.getSimpleName(), "is connected = " + clientSocket.isConnected());
                 Log.d(SocketManager.class.getSimpleName(), "received event");

@@ -20,10 +20,6 @@ import com.gromyk.sensorsedu.socket.SocketManager;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Arrays;
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class AccelerometerFragment extends Fragment {
     private int sensorType;
     private SensorManager sensorManager;
@@ -59,24 +55,13 @@ public class AccelerometerFragment extends Fragment {
         initView();
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
-    }
-
-    @Override
-    public void onPause() {
-        sensorManager.unregisterListener(sensorEventListener);
-        super.onPause();
-    }
 
     private void initSocket() {
-        socket = new SocketManager();
         String ipAddress = "192.168.0.104";
         int port = 81;
+        socket = new SocketManager(ipAddress, port);
         try {
-            socket.connect(ipAddress, port);
+            socket.connect();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -106,11 +91,14 @@ public class AccelerometerFragment extends Fragment {
             }
 
             private void processSensorChanges(SensorEvent event) {
-                xValueTextView.setText(String.valueOf(event.values[0]));
-                yValueTextView.setText(String.valueOf(event.values[1]));
-                zValueTextView.setText(String.valueOf(event.values[2]));
+                if (AccelerometerFragment.this.getView() != null) {
+                    xValueTextView.setText(String.valueOf(event.values[0]));
+                    yValueTextView.setText(String.valueOf(event.values[1]));
+                    zValueTextView.setText(String.valueOf(event.values[2]));
+                }
             }
         };
+        sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @NotNull
