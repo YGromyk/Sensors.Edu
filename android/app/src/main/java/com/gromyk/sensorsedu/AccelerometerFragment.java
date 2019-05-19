@@ -90,13 +90,14 @@ public class AccelerometerFragment extends Fragment {
 
             private void processSensorChanges(SensorEvent event) {
                 if (AccelerometerFragment.this.getView() != null) {
-                    xValueTextView.setText(String.valueOf(event.values[0]));
-                    yValueTextView.setText(String.valueOf(event.values[1]));
-                    zValueTextView.setText(String.valueOf(event.values[2]));
+                    xValueTextView.setText(NumberFormatter.format(event.values[0]));
+                    yValueTextView.setText(NumberFormatter.format(event.values[1]));
+                    zValueTextView.setText(NumberFormatter.format(event.values[2]));
                 }
             }
         };
         sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+        NumberFormatter.setDecimals(4);
     }
 
     @NotNull
