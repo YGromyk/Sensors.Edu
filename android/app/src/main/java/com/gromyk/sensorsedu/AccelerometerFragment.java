@@ -16,7 +16,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.gromyk.sensorsedu.socket.Socket;
-import com.gromyk.sensorsedu.socket.SocketManager;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -79,7 +78,7 @@ public class AccelerometerFragment extends Fragment {
         sensorEventListener = new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent event) {
-                SensorEventDTO eventDTO = new SensorEventDTO(event.values);
+                SensorEventDTO eventDTO = new SensorEventDTO(event.values, event.timestamp);
                 socket.sendMessage(eventDTO.toHashMap());
                 processSensorChanges(event);
             }
