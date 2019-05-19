@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
     private static final String FRAGMENT_TAG = AccelerometerFragment.class.getSimpleName();
 
@@ -22,5 +24,15 @@ public class MainActivity extends AppCompatActivity {
                     .add(R.id.rootLayout, accelerometerFragment, FRAGMENT_TAG)
                     .commit();
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        try {
+            App.getSocket().disconnect();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        super.onDestroy();
     }
 }

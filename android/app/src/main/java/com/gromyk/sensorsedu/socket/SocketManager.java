@@ -7,10 +7,9 @@ import java.io.ObjectOutputStream;
 import java.net.SocketException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.function.Function;
 
 public class SocketManager implements Socket {
-    public static final String LOG_TAG = SocketManager.class.getSimpleName();
+    private static final String LOG_TAG = SocketManager.class.getSimpleName();
 
     private static final int DEFAULT_THREAD_POOL_SIZE = 1;
     private ExecutorService executorService;
@@ -47,29 +46,17 @@ public class SocketManager implements Socket {
                     return;
                 }
                 isReconnecting = false;
-                Log.d(LOG_TAG, "Socket connected!");
+                Log.i(LOG_TAG, "Socket connected!");
             }
         });
     }
 
     @Override
-    public void reconnect() {
-
-    }
-
-    @Override
-    public void disconnect() {
-
-    }
-
-    @Override
-    public void on(String roomName, Function<String, Void> function) {
-
-    }
-
-    @Override
-    public void off(String roomName) {
-
+    public void disconnect() throws IOException {
+        clientSocket.close();
+        out.flush();
+        out.close();
+        Log.i(LOG_TAG, "Socket disconnected!");
     }
 
     @Override
@@ -82,24 +69,31 @@ public class SocketManager implements Socket {
                 try {
                     out.writeObject(message);
                 } catch (SocketException exception) {
-                    isReconnecting = true;
-                    executorService.execute(
-                            new Runnable() {
-                                @Override
-                                public void run() {
-                                    try {
-                                        Thread.sleep(5 * 1000); // reconnect in 5 seconds
-                                    } catch (InterruptedException e) {
-                                        e.printStackTrace();
-                                    }
-                                    connect();
-                                }
-                            }
-                    );
+                    reconnect(5 * 1000);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    reconnect(15 * 1000);
+                } catch (NullPointerException exception) {
+                    reconnect(30 * 1000);
                 }
             }
         });
+    }
+
+    @Override
+    public void reconnect(final int reconnectWithDelay) {
+        isReconnecting = true;
+        executorService.execute(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            Thread.sleep(reconnectWithDelay);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        connect();
+                    }
+                }
+        );
     }
 }

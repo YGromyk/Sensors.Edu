@@ -11,11 +11,6 @@ public class App extends Application {
     public static Socket getSocket() {
         if (socket == null) {
             socket = new SocketManager(ServerData.IP_ADDRESS, ServerData.PORT);
-            try {
-                socket.connect();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
 
         return socket;
