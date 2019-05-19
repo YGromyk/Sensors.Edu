@@ -57,9 +57,7 @@ public class AccelerometerFragment extends Fragment {
 
 
     private void initSocket() {
-        String ipAddress = "192.168.0.104";
-        int port = 81;
-        socket = new SocketManager(ipAddress, port);
+        socket = App.getSocket();
         try {
             socket.connect();
         } catch (Exception e) {

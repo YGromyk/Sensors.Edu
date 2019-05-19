@@ -4,16 +4,21 @@ import android.util.Log;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.net.SocketException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.function.Function;
 
 public class SocketManager implements Socket {
+    public static final String LOG_TAG = SocketManager.class.getSimpleName();
+
     private static final int DEFAULT_THREAD_POOL_SIZE = 1;
     private ExecutorService executorService;
 
-    private String ipAddress ;
-    private int port ;
+    private boolean isReconnecting = false;
+
+    private String ipAddress;
+    private int port;
 
     private java.net.Socket clientSocket;
     private ObjectOutputStream out;
@@ -33,12 +38,16 @@ public class SocketManager implements Socket {
                     clientSocket = new java.net.Socket(ipAddress, port);
                 } catch (IOException e) {
                     e.printStackTrace();
+                    return;
                 }
                 try {
                     out = new ObjectOutputStream(clientSocket.getOutputStream());
                 } catch (IOException e) {
                     e.printStackTrace();
+                    return;
                 }
+                isReconnecting = false;
+                Log.d(LOG_TAG, "Socket connected!");
             }
         });
     }
@@ -69,13 +78,24 @@ public class SocketManager implements Socket {
         executorService.execute(new Runnable() {
             @Override
             public void run() {
-                if (!clientSocket.isConnected())
-                    connect();
-                Log.d(SocketManager.class.getSimpleName(), clientSocket.toString());
-                Log.d(SocketManager.class.getSimpleName(), "is connected = " + clientSocket.isConnected());
-                Log.d(SocketManager.class.getSimpleName(), "received event");
+                if (isReconnecting) return;
                 try {
                     out.writeObject(message);
+                } catch (SocketException exception) {
+                    isReconnecting = true;
+                    executorService.execute(
+                            new Runnable() {
+                                @Override
+                                public void run() {
+                                    try {
+                                        Thread.sleep(5 * 1000); // reconnect in 5 seconds
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                    connect();
+                                }
+                            }
+                    );
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

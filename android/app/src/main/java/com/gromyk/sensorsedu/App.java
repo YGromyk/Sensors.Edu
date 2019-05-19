@@ -7,11 +7,12 @@ import com.gromyk.sensorsedu.socket.SocketManager;
 
 public class App extends Application {
     private static Socket socket;
+
     public static Socket getSocket() {
         if (socket == null) {
-            socket = new SocketManager();
+            socket = new SocketManager(ServerData.IP_ADDRESS, ServerData.PORT);
             try {
-                socket.connect("10.55.2.155", 81);
+                socket.connect();
             } catch (Exception e) {
                 e.printStackTrace();
             }
