@@ -19,6 +19,7 @@ import com.gromyk.sensorsedu.socket.Socket;
 
 import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("FieldCanBeLocal")
 public class AccelerometerFragment extends Fragment {
     private int sensorType;
     private SensorManager sensorManager;

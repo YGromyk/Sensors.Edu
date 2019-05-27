@@ -53,10 +53,27 @@ public class SocketManager implements Socket {
 
     @Override
     public void disconnect() throws IOException {
-        clientSocket.close();
-        out.flush();
-        out.close();
-        Log.i(LOG_TAG, "Socket disconnected!");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    clientSocket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    out.flush();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                Log.i(LOG_TAG, "Socket disconnected!");
+            }
+        }).start();
     }
 
     @Override
