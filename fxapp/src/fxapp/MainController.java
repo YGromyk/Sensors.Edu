@@ -47,7 +47,12 @@ public class MainController {
                 e.printStackTrace();
             }
             ClientThread client = new ClientThread(socket);
-            client.setOnEventListener(eventListeners.get(countOfClients));
+            try{
+                client.setOnEventListener(eventListeners.get(countOfClients));
+            } catch (IndexOutOfBoundsException exception) {
+                System.out.println("Can't process more than" + getEventListeners().size() + " connections");
+                return;
+            }
             client.start();
             countOfClients++;
         }

@@ -11,7 +11,7 @@ import java.util.concurrent.Executors;
 public class SocketManager implements Socket {
     private static final String LOG_TAG = SocketManager.class.getSimpleName();
 
-    private static final int DEFAULT_THREAD_POOL_SIZE = 1;
+    private static final int DEFAULT_THREAD_POOL_SIZE = 4;
     private ExecutorService executorService;
 
     private boolean isReconnecting = false;
@@ -52,7 +52,7 @@ public class SocketManager implements Socket {
     }
 
     @Override
-    public void disconnect() throws IOException {
+    public void disconnect() {
         new Thread(new Runnable() {
             @Override
             public void run() {

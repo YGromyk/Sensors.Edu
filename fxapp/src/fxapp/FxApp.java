@@ -20,28 +20,28 @@ public class FxApp extends Application {
         VBox root = new VBox();
 
         long currentTime = System.currentTimeMillis();
-        long tickunit = 1000L;
+        long tickUnit = 1000L;
 
 
         ChartView first = new ChartView(
                 new NumberAxis(
-                        currentTime - (5 * tickunit),
-                        currentTime + (2 * tickunit),
-                        tickunit
+                        currentTime - (5 * tickUnit),
+                        currentTime + (2 * tickUnit),
+                        tickUnit
                 ),
                 new NumberAxis()
         );
-        first.setTickUnit(tickunit);
+        first.setTickUnit(tickUnit);
 
         ChartView second = new ChartView(
                 new NumberAxis(
-                        currentTime - (5 * tickunit),
-                        currentTime + (2 * tickunit),
-                        tickunit
+                        currentTime - (5 * tickUnit),
+                        currentTime + (2 * tickUnit),
+                        tickUnit
                 ),
                 new NumberAxis()
         );
-        second.setTickUnit(tickunit);
+        second.setTickUnit(tickUnit);
 
         root.getChildren().addAll(first, second);
 
