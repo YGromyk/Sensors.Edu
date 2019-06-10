@@ -25,6 +25,7 @@ public class ClientThread extends Thread {
             objectInputStream = new ObjectInputStream(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
+            return;
         }
         Object line;
         System.out.println("Client: " + socket.getRemoteSocketAddress() + " connected.");
@@ -39,9 +40,15 @@ public class ClientThread extends Thread {
                 }
             } catch (EOFException exception) {
                 System.out.println("Client " + socket.getRemoteSocketAddress() + " disconnected.");
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 return;
             } catch (ClassNotFoundException | IOException e) {
                 e.printStackTrace();
+                return;
             }
         }
     }

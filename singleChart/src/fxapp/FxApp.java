@@ -33,21 +33,10 @@ public class FxApp extends Application {
         );
         first.setTickUnit(tickUnit);
 
-        ChartView second = new ChartView(
-                new NumberAxis(
-                        currentTime - (5 * tickUnit),
-                        currentTime + (2 * tickUnit),
-                        tickUnit
-                ),
-                new NumberAxis()
-        );
-        second.setTickUnit(tickUnit);
-
-        root.getChildren().addAll(first, second);
+        root.getChildren().add(first);
 
         MainController mainController = new MainController();
-        mainController.getEventListeners().add(getChartListener(first));
-        mainController.getEventListeners().add(getChartListener(second));
+        mainController.setEventListener(getChartListener(first));
 
         Scene scene = new Scene(root, width, height);
         stage.setTitle("SensorsApp");

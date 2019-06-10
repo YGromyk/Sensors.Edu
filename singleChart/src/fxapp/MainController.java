@@ -6,23 +6,11 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainController {
-    private int countOfClients = 0;
-
-    public List<ClientThread.OnEventListener> getEventListeners() {
-        return eventListeners;
-    }
-
-    public void setEventListeners(List<ClientThread.OnEventListener> eventListeners) {
-        this.eventListeners = eventListeners;
-    }
-
-    private List<ClientThread.OnEventListener> eventListeners;
+    private ClientThread.OnEventListener eventListener;
 
     public MainController() {
-        eventListeners = new ArrayList<>();
     }
 
     @SuppressWarnings("InfiniteLoopStatement")
@@ -47,14 +35,17 @@ public class MainController {
                 e.printStackTrace();
             }
             ClientThread client = new ClientThread(socket);
-            try{
-                client.setOnEventListener(eventListeners.get(countOfClients));
-            } catch (IndexOutOfBoundsException exception) {
-                System.out.println("Can't process more than" + getEventListeners().size() + " connections");
-                return;
-            }
+            client.setOnEventListener(eventListener);
             client.start();
-            countOfClients++;
-        }
+         }
     }
+
+    public void setEventListener(ClientThread.OnEventListener eventListener) {
+        this.eventListener = eventListener;
+    }
+
+    public ClientThread.OnEventListener getEventListener() {
+        return eventListener;
+    }
+
 }
