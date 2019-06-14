@@ -19,6 +19,8 @@ import com.gromyk.sensorsedu.socket.Socket;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.io.IOException;
+
 @SuppressWarnings("FieldCanBeLocal")
 public class AccelerometerFragment extends Fragment {
     private int sensorType;
@@ -65,6 +67,7 @@ public class AccelerometerFragment extends Fragment {
         }
     }
 
+    @SuppressWarnings("ConstantConditions")
     private void initView() {
         xValueTextView = getView().findViewById(R.id.xValueTextView);
         yValueTextView = getView().findViewById(R.id.yValueTextView);
@@ -89,15 +92,24 @@ public class AccelerometerFragment extends Fragment {
             }
 
             private void processSensorChanges(SensorEvent event) {
-                if (AccelerometerFragment.this.getView() != null) {
-                    xValueTextView.setText(NumberFormatter.format(event.values[0]));
-                    yValueTextView.setText(NumberFormatter.format(event.values[1]));
-                    zValueTextView.setText(NumberFormatter.format(event.values[2]));
-                }
+                xValueTextView.setText(NumberFormatter.format(event.values[0]));
+                yValueTextView.setText(NumberFormatter.format(event.values[1]));
+                zValueTextView.setText(NumberFormatter.format(event.values[2]));
             }
         };
         sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
         NumberFormatter.setDecimals(4);
+    }
+
+    @Override
+    public void onDestroyView() {
+        sensorManager.unregisterListener(sensorEventListener);
+        try {
+            App.getSocket().disconnect();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        super.onDestroyView();
     }
 
     @NotNull

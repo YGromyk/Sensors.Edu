@@ -12,7 +12,6 @@ public class App extends Application {
         if (socket == null) {
             socket = new SocketManager(ServerData.IP_ADDRESS, ServerData.PORT);
         }
-
         return socket;
     }
 }

@@ -25,14 +25,4 @@ public class MainActivity extends AppCompatActivity {
                     .commit();
         }
     }
-
-    @Override
-    protected void onDestroy() {
-        try {
-            App.getSocket().disconnect();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        super.onDestroy();
-    }
 }
