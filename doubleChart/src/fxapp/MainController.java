@@ -11,7 +11,7 @@ import java.util.List;
 public class MainController {
     private int countOfClients = 0;
 
-    public List<ClientThread.OnEventListener> getEventListeners() {
+    List<ClientThread.OnEventListener> getEventListeners() {
         return eventListeners;
     }
 
@@ -21,12 +21,11 @@ public class MainController {
 
     private List<ClientThread.OnEventListener> eventListeners;
 
-    public MainController() {
+    MainController() {
         eventListeners = new ArrayList<>();
     }
 
-    @SuppressWarnings("InfiniteLoopStatement")
-    public void connectSocket() {
+    void connectSocket() {
         ServerSocket serverSocket = null;
         Socket socket = null;
         final int portNumber = 3000;
@@ -47,7 +46,7 @@ public class MainController {
                 e.printStackTrace();
             }
             ClientThread client = new ClientThread(socket);
-            try{
+            try {
                 client.setOnEventListener(eventListeners.get(countOfClients));
             } catch (IndexOutOfBoundsException exception) {
                 System.out.println("Can't process more than" + getEventListeners().size() + " connections");

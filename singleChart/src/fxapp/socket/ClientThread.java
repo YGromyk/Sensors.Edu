@@ -41,14 +41,12 @@ public class ClientThread extends Thread {
             } catch (EOFException exception) {
                 System.out.println("Client " + socket.getRemoteSocketAddress() + " disconnected.");
                 try {
-                    socket.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
+                    socket.close(
+                    );
+                } catch (IOException ignored) {
                 }
                 return;
-            } catch (ClassNotFoundException | IOException e) {
-                e.printStackTrace();
-                return;
+            } catch (ClassNotFoundException | IOException ignored) {
             }
         }
     }

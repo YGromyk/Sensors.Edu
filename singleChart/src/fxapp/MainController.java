@@ -29,15 +29,17 @@ public class MainController {
 
         while (true) {
             try {
-                assert serverSocket != null;
-                socket = serverSocket.accept();
+                socket = serverSocket != null ? serverSocket.accept() : null;
+                if (socket == null)
+                    continue;
             } catch (Exception e) {
                 e.printStackTrace();
+                continue;
             }
             ClientThread client = new ClientThread(socket);
             client.setOnEventListener(eventListener);
             client.start();
-         }
+        }
     }
 
     public void setEventListener(ClientThread.OnEventListener eventListener) {

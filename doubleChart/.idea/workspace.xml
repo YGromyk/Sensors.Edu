@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/copyright/gromyk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fxapp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/out/production/fxapp/fxapp/ChartView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/out/production/fxapp/fxapp/FxApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/out/production/fxapp/fxapp/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/out/production/fxapp/fxapp/socket/ClientThread$OnEventListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/out/production/fxapp/fxapp/socket/ClientThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/out/production/fxapp/fxapp/socket/SensorEventDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/out/production/fxapp/fxapp/utils/ChartStringConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/out/production/fxapp/fxapp/utils/ColorsHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/src/fxapp/ChartView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/src/fxapp/FxApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/src/fxapp/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/src/fxapp/socket/ClientThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/src/fxapp/socket/SensorEventDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/src/fxapp/utils/ChartStringConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fxapp/src/fxapp/utils/ColorsHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../android/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/AccelerometerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/AccelerometerFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/ServerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../android/app/src/main/java/com/gromyk/sensorsedu/ServerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/fxapp/fxapp/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/fxapp/fxapp/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxapp/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxapp/MainController.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,26 +70,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fxapp/utils/ChartStringConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#212#213#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fxapp/socket/ClientThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="315">
+              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
               <folding>
                 <element signature="e#383#384#0" expanded="true" />
                 <element signature="e#425#426#0" expanded="true" />
@@ -115,20 +82,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/ClassNotFoundException.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fxapp/socket/SensorEventDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+            <state relative-caret-position="945">
+              <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/scene/chart/Axis.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/ClassNotFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="80" column="22" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
+            <state relative-caret-position="525">
+              <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -136,10 +106,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fxapp/FxApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="816">
+              <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/application/Platform.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+              <folding>
+                <element signature="e#2657#2658#0" expanded="true" />
+                <element signature="e#2704#2705#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fxapp/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="52" column="94" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
+            <state relative-caret-position="578">
+              <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -224,14 +207,14 @@
         <option value="$PROJECT_DIR$/src/fxapp/sample.fxml" />
         <option value="$PROJECT_DIR$/src/fxapp/utils/ColorsHelper.java" />
         <option value="$PROJECT_DIR$/src/fxapp/ClientThread.java" />
-        <option value="$PROJECT_DIR$/src/fxapp/socket/ClientThread.java" />
         <option value="$PROJECT_DIR$/src/fxapp/socket/SensorEventDTO.java" />
         <option value="$PROJECT_DIR$/src/fxapp/utils/StringConverter.java" />
         <option value="$PROJECT_DIR$/src/fxapp/utils/ChartStringConverter.java" />
         <option value="$PROJECT_DIR$/src/fxapp/Main.java" />
         <option value="$PROJECT_DIR$/src/fxapp/ChartView.java" />
-        <option value="$PROJECT_DIR$/src/fxapp/MainController.java" />
         <option value="$PROJECT_DIR$/src/fxapp/FxApp.java" />
+        <option value="$PROJECT_DIR$/src/fxapp/MainController.java" />
+        <option value="$PROJECT_DIR$/src/fxapp/socket/ClientThread.java" />
       </list>
     </option>
   </component>
@@ -257,6 +240,24 @@
               <item name="doubleChart" type="b2602c69:ProjectViewProjectNode" />
               <item name="doubleChart" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="doubleChart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doubleChart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doubleChart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doubleChart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fxapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doubleChart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doubleChart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fxapp" type="462c0819:PsiDirectoryNode" />
+              <item name="socket" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -275,6 +276,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -406,26 +408,31 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1562236504406" duration="602000" />
+      <workItem from="1562248728615" duration="7000" />
+      <workItem from="1562259893793" duration="664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1302000" />
+    <option name="totallyTimeSpent" value="2575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="977" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15238096" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15709047" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
+      <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23329559" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.398641" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23276836" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39774013" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -437,6 +444,8 @@
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32911393" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3295583" />
       <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -449,7 +458,11 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" x="0" y="45" width="1680" height="955" id="UML design tool window" maximized="true" order="11" type="WINDOWED" weight="0.5517857" />
+      <window_info anchor="right" id="PlantUML" order="12" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
@@ -530,17 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/application/Platform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-          <folding>
-            <element signature="e#2657#2658#0" expanded="true" />
-            <element signature="e#2704#2705#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,16 +664,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fxapp/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/fxapp/socket/SensorEventDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/scene/chart/NumberAxis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -709,17 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fxapp/socket/ClientThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding>
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/scene/chart/Axis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -727,12 +708,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fxapp/FxApp.java">
+    <entry file="file://$PROJECT_DIR$/src/fxapp/socket/ClientThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="315">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding>
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fxapp/socket/SensorEventDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/ClassNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/javafx-src.zip!/javafx/application/Platform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <element signature="e#2657#2658#0" expanded="true" />
+            <element signature="e#2704#2705#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -751,16 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fxapp/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="52" column="94" selection-start-line="52" selection-start-column="94" selection-end-line="52" selection-end-column="94" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fxapp/utils/ColorsHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -775,10 +775,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/ClassNotFoundException.java">
+    <entry file="file://$PROJECT_DIR$/src/fxapp/FxApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        <state relative-caret-position="816">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fxapp/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -878,5 +891,55 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
   </component>
 </project>
