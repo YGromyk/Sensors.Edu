@@ -1,5 +1,6 @@
 package com.gromyk.sensorsedu;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -13,7 +14,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
 import com.gromyk.sensorsedu.socket.Socket;
 
@@ -61,7 +61,8 @@ public class AccelerometerFragment extends Fragment {
     private void initSocket() {
         socket = App.getSocket();
         try {
-            socket.connect();
+            if (!socket.isConnected())
+                socket.connect();
         } catch (Exception e) {
             e.printStackTrace();
         }

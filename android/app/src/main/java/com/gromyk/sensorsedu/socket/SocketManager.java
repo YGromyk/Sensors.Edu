@@ -15,6 +15,7 @@ public class SocketManager implements Socket {
     private ExecutorService executorService;
 
     private boolean isReconnecting = false;
+    private boolean isConnected = false;
 
     private String ipAddress;
     private int port;
@@ -46,6 +47,7 @@ public class SocketManager implements Socket {
                     return;
                 }
                 isReconnecting = false;
+                isConnected = true;
                 Log.i(LOG_TAG, "Socket connected!");
             }
         });
@@ -58,19 +60,20 @@ public class SocketManager implements Socket {
             public void run() {
                 try {
                     clientSocket.close();
-                } catch (IOException e) {
+                } catch (IOException | NullPointerException e) {
                     e.printStackTrace();
                 }
                 try {
                     out.flush();
-                } catch (IOException e) {
+                } catch (IOException | NullPointerException e) {
                     e.printStackTrace();
                 }
                 try {
                     out.close();
-                } catch (IOException e) {
+                } catch (IOException | NullPointerException e) {
                     e.printStackTrace();
                 }
+                isConnected = false;
                 Log.i(LOG_TAG, "Socket disconnected!");
             }
         }).start();
@@ -108,9 +111,15 @@ public class SocketManager implements Socket {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
+                        disconnect();
                         connect();
                     }
                 }
         );
+    }
+
+    @Override
+    public boolean isConnected() {
+        return isConnected;
     }
 }

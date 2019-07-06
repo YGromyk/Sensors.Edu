@@ -1,13 +1,11 @@
 package com.gromyk.sensorsedu;
 
+import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
-import java.io.IOException;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     private static final String FRAGMENT_TAG = AccelerometerFragment.class.getSimpleName();
 
     @Override
@@ -18,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initFragment() {
-        if (getSupportFragmentManager().findFragmentByTag(FRAGMENT_TAG) == null) {
+        if (getFragmentManager().findFragmentByTag(FRAGMENT_TAG) == null) {
             Fragment accelerometerFragment = AccelerometerFragment.newInstance();
-            getSupportFragmentManager().beginTransaction()
+            getFragmentManager().beginTransaction()
                     .add(R.id.rootLayout, accelerometerFragment, FRAGMENT_TAG)
                     .commit();
         }

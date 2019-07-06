@@ -10,4 +10,6 @@ public interface Socket {
     void disconnect() throws IOException;
 
     void sendMessage(Object message);
+
+    boolean isConnected();
 }
